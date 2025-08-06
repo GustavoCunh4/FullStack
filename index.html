@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Luiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #0077b6 60%, #48cae4 100%);
+            color: #fff;
+            padding: 40px 0 20px 0;
+            text-align: center;
+            border-bottom: 4px solid #00b4d8;
+        }
+        @media (max-width: 600px) {
+            header {
+            padding: 25px 0 10px 0;
+            font-size: 1rem;
+            }
+            .container {
+            padding: 15px;
+            }
+            h1 {
+            font-size: 1.5rem;
+            }
+        }
+        button, a {
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        }
+        .project-card {
+            background: #f8f9fa;
+            border: 1px solid #90e0ef;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+        .project-card:hover {
+            box-shadow: 0 4px 16px rgba(0,123,182,0.15);
+            transform: translateY(-4px) scale(1.02);
+            border-color: #00b4d8;
+        }
+        a {
+            color: #0077b6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            color: #023e8a;
+            text-decoration: underline;
+            background: #caf0f8;
+            border-radius: 3px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0077b6;
+            margin-top: 30px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background: #e9ecef;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #0077b6;
+            color: #fff;
+            margin-top: 40px;
+        }
+        a {
+            color: #0077b6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Luiz Gustavo</h1>
+        <p>Desenvolvedor Full Stack</p>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Sobre mim</h2>
+            <p>Sou apaixonado por tecnologia e desenvolvimento web. Tenho experiência em projetos Full Stack utilizando HTML, CSS, JavaScript, Node.js e React.</p>
+        </section>
+        <section>
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML5, CSS3, JavaScript</li>
+                <li>React, Node.js</li>
+                <li>Git & GitHub</li>
+                <li>Banco de Dados SQL e NoSQL</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Projetos</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Site de Portfólio</h3>
+                    <p>Um site responsivo para apresentar meus projetos e habilidades.</p>
+                    <a href="#">Ver projeto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Aplicativo de Tarefas</h3>
+                    <p>Aplicativo web para gerenciamento de tarefas usando React e Node.js.</p>
+                    <a href="#">Ver projeto</a>
+                </div>
+                <div class="project-card">
+                    <h3>API RESTful</h3>
+                    <p>API desenvolvida em Node.js para integração com aplicações front-end.</p>
+                    <a href="#">Ver projeto</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Contato</h2>
+            <p>Email: <a href="mailto:luiz@email.com">luiz@email.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/luizgoncalves" target="_blank">linkedin.com/in/luizgoncalves</a></p>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 Luiz Gonçalves. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
